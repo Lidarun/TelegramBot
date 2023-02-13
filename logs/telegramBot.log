@@ -1,0 +1,13 @@
+2023-02-12 19:10:49 DEBUG TelegramBot:34 - fffffffffffff
+2023-02-12 19:14:29 DEBUG TelegramBot:34 - /start
+2023-02-12 19:59:23 DEBUG TelegramBot:34 - /start
+2023-02-12 20:32:52 ERROR TelegramBot:52 - ChatId parameter can't be empty
+2023-02-12 20:44:03 ERROR TelegramBot:52 - ChatId parameter can't be empty
+2023-02-12 20:44:09 ERROR TelegramBot:52 - ChatId parameter can't be empty
+2023-02-12 20:46:30 ERROR TelegramBot:44 - ChatId parameter can't be empty
+2023-02-12 23:42:16 ERROR BotInitializer:29 - Error removing old webhook
+2023-02-12 23:55:22 ERROR BotInitializer:29 - Error removing old webhook
+2023-02-13 00:00:43 ERROR BotInitializer:29 - Error removing old webhook
+2023-02-13 00:01:51 ERROR BotInitializer:29 - Error removing old webhook
+2023-02-13 00:02:54 ERROR BotInitializer:29 - Error removing old webhook
+2023-02-13 00:04:03 ERROR BotInitializer:29 - Error removing old webhook
