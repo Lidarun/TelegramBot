@@ -1,8 +1,10 @@
 package com.lidarunium.controller;
 
 import com.lidarunium.config.BotConfig;
+import com.lidarunium.model.City;
 import com.lidarunium.service.MessageService;
 import com.lidarunium.service.UserService;
+import com.lidarunium.service.CityService;
 import lombok.extern.log4j.Log4j;
 import org.springframework.stereotype.Component;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
@@ -17,11 +19,13 @@ public class TelegramBot extends TelegramLongPollingBot {
     private final BotConfig config;
     private final MessageService messageService;
     private final UserService userService;
+    private final CityService cityService;
 
-    public TelegramBot(BotConfig config, MessageService messageService, UserService userService) {
+    public TelegramBot(BotConfig config, MessageService messageService, UserService userService, CityService cityService) {
         this.config = config;
         this.messageService = messageService;
         this.userService = userService;
+        this.cityService = cityService;
     }
 
     @Override
@@ -42,10 +46,15 @@ public class TelegramBot extends TelegramLongPollingBot {
         switch (request) {
             case "/start":
                 userService.save(update);
-                sendMessage(messageService.send(chatId, "Приветствую " + userFName + "!"));
+                sendMessage(messageService.send(chatId,
+                        "Приветствую " + userFName + "!"));
                 break;
+
             case "/weather":
-                sendMessage(messageService.send(chatId, "В процессе разработки"));
+                String city = cityService.getCityInfo("Париж");
+                sendMessage(messageService.send(chatId,
+                        city));
+
                 break;
             default:
                 sendMessage(messageService.send(chatId, "Неизвестная команда!"));

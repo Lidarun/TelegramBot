@@ -11,3 +11,57 @@
 2023-02-13 00:01:51 ERROR BotInitializer:29 - Error removing old webhook
 2023-02-13 00:02:54 ERROR BotInitializer:29 - Error removing old webhook
 2023-02-13 00:04:03 ERROR BotInitializer:29 - Error removing old webhook
+2023-02-13 19:20:11 DEBUG WeatherServiceImpl:34 - Server returned HTTP response code: 401 for URL: https://api.openweathermap.org/data/2.5/weather?q=Bishkek&appid=8fe6e61761bb3094e08341a80ad935fa&units=metric
+2023-02-13 19:22:54 DEBUG WeatherServiceImpl:34 - Server returned HTTP response code: 401 for URL: http://api.openweathermap.org/geo/1.0/direct?q=Bishkek&limit=5&appid={097e7a36c584cdb3b0001619654e57d1}
+2023-02-13 19:23:45 DEBUG WeatherServiceImpl:34 - Server returned HTTP response code: 401 for URL: https://api.openweathermap.org/geo/1.0/direct?q=Bishkek&limit=5&appid={097e7a36c584cdb3b0001619654e57d1}
+2023-02-13 19:28:35 DEBUG WeatherServiceImpl:34 - Server returned HTTP response code: 401 for URL: https://api.openweathermap.org/geo/1.0/direct?q=Бишкек&limit=5&appid={097e7a36c584cdb3b0001619654e57d1}
+2023-02-13 19:29:49 DEBUG WeatherServiceImpl:34 - Server returned HTTP response code: 401 for URL: http://api.openweathermap.org/geo/1.0/direct?q=Бишкек&limit=5&appid={097e7a36c584cdb3b0001619654e57d1}
+2023-02-13 19:31:25 DEBUG WeatherServiceImpl:34 - http://api.openweathermap.org/geo/2.5/direct?q=Бишкек&limit=5&appid={097e7a36c584cdb3b0001619654e57d1}
+2023-02-13 19:35:33 DEBUG WeatherServiceImpl:35 - http://api.openweathermap.org/geo/2.5/direct?q=Бишкек&limit=5&appid=097e7a36c584cdb3b0001619654e57d1
+2023-02-14 13:36:24 DEBUG WeatherServiceImpl:46 - A JSONObject text must begin with '{' at 1 [character 2 line 1]City: Бишкек
+2023-02-14 13:37:50 DEBUG WeatherServiceImpl:35 - A JSONObject text must begin with '{' at 1 [character 2 line 1]City: Бишкек
+2023-02-14 13:47:40 DEBUG WeatherServiceImpl:33 - Cannot invoke "com.fasterxml.jackson.databind.JsonNode.asText()" because the return value of "com.fasterxml.jackson.databind.JsonNode.get(String)" is nullCity: Бишкек
+2023-02-14 13:49:15 DEBUG WeatherServiceImpl:33 - Cannot invoke "com.fasterxml.jackson.databind.JsonNode.asText()" because the return value of "com.fasterxml.jackson.databind.JsonNode.get(String)" is nullCity: Бишкек
+2023-02-14 13:54:43 DEBUG WeatherServiceImpl:34 - Cannot invoke "com.fasterxml.jackson.databind.JsonNode.asText()" because the return value of "com.fasterxml.jackson.databind.JsonNode.get(String)" is nullCity: Бишкек
+2023-02-14 14:38:13 DEBUG WeatherServiceImpl:35 - A JSONObject text must begin with '{' at 1 [character 2 line 1]City: Бишкек
+2023-02-14 14:44:02 DEBUG WeatherServiceImpl:38 - class org.json.JSONArray cannot be cast to class org.json.JSONObject (org.json.JSONArray and org.json.JSONObject are in unnamed module of loader 'app')City: Бишкек
+2023-02-14 14:47:33 DEBUG WeatherServiceImpl:38 - class org.json.JSONArray cannot be cast to class org.json.JSONObject (org.json.JSONArray and org.json.JSONObject are in unnamed module of loader 'app')City: Бишкек
+2023-02-14 14:48:29 DEBUG WeatherServiceImpl:38 - class org.json.JSONArray cannot be cast to class org.json.JSONObject (org.json.JSONArray and org.json.JSONObject are in unnamed module of loader 'app')City: Бишкек
+2023-02-14 14:49:43 DEBUG WeatherServiceImpl:38 - A JSONObject text must begin with '{' at 1 [character 2 line 1]City: Бишкек
+2023-02-14 16:59:06 DEBUG WeatherServiceImpl:38 - A JSONObject text must begin with '{' at 1 [character 2 line 1]City: Бишкек
+2023-02-14 16:59:07 DEBUG WeatherServiceImpl:38 - A JSONObject text must begin with '{' at 1 [character 2 line 1]City: Бишкек
+2023-02-14 16:59:17 DEBUG WeatherServiceImpl:38 - A JSONObject text must begin with '{' at 1 [character 2 line 1]City: Бишкек
+2023-02-14 17:00:07 DEBUG WeatherServiceImpl:38 - A JSONObject text must begin with '{' at 1 [character 2 line 1]City: Бишкек
+2023-02-14 17:18:08 ERROR TelegramBot:67 - Text parameter can't be empty
+2023-02-14 20:18:18 DEBUG WeatherServiceImpl:33 - com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize value of type `com.lidarunium.model.CityInfo` from Array value (token `JsonToken.START_ARRAY`)
+ at [Source: (String)"[{"name":"Bishkek","local_names":{"de":"Bischkek","ml":"ബിഷ്കെക്ക്","ru":"Бишкек","bg":"Бишкек","bn":"বিশকেক","tk":"Bişkek","sk":"Biškek","bo":"བི་སི་ཀེཀ","mn":"Бишкек","fo":"Bisjkek","ta":"பிசுக்கெக்","sc":"Bishkek","az":"Bişkek","eo":"Biŝkeko","ku":"Bîşkek","os":"Бишкек","la":"Biscecum","zh":"比什凯克","el":"Μπισκέκ","he":"בישקק","et":"Biškek","sw":"Bishkek","ba":"Бишкәк","cs":"Biškek","gn":"Biskek","lv":"Biškeka","sn":"Bishkek","my":"ဘီရှကက်မြို့","li":"Bisjkek","th":"บิชเคก","am":"ቢሽኬክ","ja":"ビシ"[truncated 1173 chars]; line: 1, column: 1]City: Бишкек
+2023-02-14 20:25:57 ERROR BotInitializer:29 - Error removing old webhook
+2023-02-14 20:34:49 DEBUG WeatherServiceImpl:34 - Not a JSON Object: [{"name":"Bishkek","local_names":{"ie":"Bishkek","ha":"Bishkek","he":"בישקק","lb":"Bischkek","os":"Бишкек","ro":"Bișkek","ko":"비슈케크","fi":"Biškek","bs":"Biškek","ht":"Bichkek","kg":"Biskek","ce":"Бишкек","cv":"Бишкек","mr":"बिश्केक","th":"บิชเคก","ascii":"Bishkek","sh":"Biškek","fo":"Bisjkek","id":"Bishkek","lv":"Biškeka","gn":"Biskek","ku":"Bîşkek","no":"Bisjkek","ja":"ビシュケク","li":"Bisjkek","uk":"Бішкек","hy":"Բիշքեկ","el":"Μπισκέκ","pl":"Biszkek","la":"Biscecum","na":"Bishkek","ne":"विस्केक","tk":"Bişkek","sr":"Бишкек","sk":"Biškek","zh":"比什凯克","is":"Bishkek","bo":"བི་སི་ཀེཀ","eo":"Biŝkeko","kn":"ಬಿಷ್ಕೆಕ್","br":"Bichkek","mg":"Bishkek","lt":"Biškekas","bn":"বিশকেক","af":"Bisjkek","uz":"Bishkek","sw":"Bishkek","gl":"Bixkek","eu":"Bixkek","yo":"Bishkek","mn":"Бишкек","ur":"بشکیک","bh":"बिश्केक","it":"Biškek","sl":"Biškek","ru":"Бишкек","sc":"Bishkek","gd":"Bishkek","ka":"ბიშკეკი","kv":"Бишкек","am":"ቢሽኬክ","es":"Biskek","fy":"Bisjkek","ml":"ബിഷ്കെക്ക്","sv":"Bisjkek","ba":"Бишкәк","ta":"பிசுக்கெக்","nl":"Bisjkek","sq":"Bishkeku","pt":"Bisqueque","tg":"Бишкек","hi":"बिश्केक","oc":"Bishquec","tt":"Бишкәк","yi":"בישקעק","be":"Бішкек","fr":"Bichkek","mk":"Бишкек","tr":"Bişkek","hr":"Biškek","io":"Bishkek","tl":"Biskek","ps":"بشکک","nn":"Bisjkek","sn":"Bishkek","ar":"بيشكك","ms":"Bishkek","da":"Bisjkek","ky":"Бишкек","hu":"Biskek","ks":"بشکیک","en":"Bishkek","jv":"Bishkek","cy":"Bishkek","my":"ဘီရှကက်မြို့","ug":"بىشكەك","cs":"Biškek","de":"Bischkek","pa":"ਬਿਸ਼ਕੇਕ","an":"Bishkek","bg":"Бишкек","ca":"Bixkek","et":"Biškek","fa":"بیشکک","vi":"Bishkek","kk":"Бішкек","feature_name":"Bishkek","az":"Bişkek"},"lat":42.8765615,"lon":74.6070079,"country":"KG"}]City: Бишкек
+2023-02-14 20:38:02 DEBUG WeatherServiceImpl:40 - java.lang.IllegalStateException: Expected BEGIN_OBJECT but was BEGIN_ARRAY at line 1 column 2 path $City: Бишкек
+2023-02-14 20:39:34 DEBUG WeatherServiceImpl:35 - java.lang.IllegalStateException: Expected BEGIN_OBJECT but was BEGIN_ARRAY at line 1 column 2 path $City: Бишкек
+2023-02-14 20:46:41 DEBUG WeatherServiceImpl:31 - A JSONObject text must begin with '{' at 1 [character 2 line 1]City: Бишкек
+2023-02-14 20:50:40 DEBUG WeatherServiceImpl:31 - A JSONObject text must begin with '{' at 1 [character 2 line 1]City: Бишкек
+2023-02-14 20:53:57 DEBUG WeatherServiceImpl:32 - Cannot deserialize value of type `com.lidarunium.model.CityInfo` from Array value (token `JsonToken.START_ARRAY`)
+ at [Source: UNKNOWN; byte offset: #UNKNOWN]City: Бишкек
+2023-02-14 20:57:02 DEBUG WeatherServiceImpl:32 - Cannot deserialize value of type `com.lidarunium.model.CityInfo` from Array value (token `JsonToken.START_ARRAY`)
+ at [Source: UNKNOWN; byte offset: #UNKNOWN]City: Бишкек
+2023-02-14 21:00:07 DEBUG WeatherServiceImpl:32 - Cannot deserialize value of type `org.json.JSONObject` from Array value (token `JsonToken.START_ARRAY`)
+ at [Source: UNKNOWN; byte offset: #UNKNOWN]City: Бишкек
+2023-02-14 21:14:11 DEBUG WeatherServiceImpl:34 - Cannot deserialize value of type `com.google.gson.JsonObject` from Array value (token `JsonToken.START_ARRAY`)
+ at [Source: (URL); line: 1, column: 1]City: Бишкек
+2023-02-14 21:21:25 DEBUG WeatherServiceImpl:34 - A JSONObject text must begin with '{' at 0 [character 1 line 1]City: Бишкек
+2023-02-14 21:22:24 DEBUG WeatherServiceImpl:34 - A JSONObject text must begin with '{' at 1 [character 2 line 1]City: Бишкек
+2023-02-14 21:23:08 DEBUG WeatherServiceImpl:34 - Expected a ':' after a key at 1675 [character 1676 line 1]City: Бишкек
+2023-02-14 21:24:52 DEBUG WeatherServiceImpl:34 - JSONObject["name"] not found.City: Бишкек
+2023-02-14 21:25:44 DEBUG WeatherServiceImpl:34 - A JSONObject text must begin with '{' at 0 [character 1 line 1]City: Бишкек
+2023-02-15 16:39:59 ERROR BotInitializer:29 - Error removing old webhook
+2023-02-15 16:52:41 DEBUG CityServiceImpl:36 - A JSONObject text must begin with '{' at 1 [character 2 line 1]City: Кара-Балта
+2023-02-15 16:56:54 DEBUG CityServiceImpl:37 - could not execute statement; SQL [n/a]; constraint [id" of relation "cities_info]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statementCity: Кара-Балта
+2023-02-15 16:59:43 DEBUG CityServiceImpl:37 - could not execute statement; SQL [n/a]; constraint [id" of relation "cities_info]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statementCity: Кара-Балта
+2023-02-15 17:03:22 DEBUG CityServiceImpl:37 - could not execute statement; SQL [n/a]; constraint [id" of relation "cities_info]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statementCity: Кара-Балта
+2023-02-15 17:06:40 DEBUG CityServiceImpl:37 - No results for path: $['local_names']['ru']City: Караганда
+2023-02-15 17:08:09 DEBUG CityServiceImpl:39 - No results for path: $['local_names']['ru']City: Караганда
+2023-02-15 17:18:35 DEBUG CityServiceImpl:37 - No results for path: $['local_names']['en']City: Paris
+2023-02-15 17:19:30 DEBUG CityServiceImpl:37 - No results for path: $['local_names']['en']City: Париж
+2023-02-15 17:21:20 DEBUG CityServiceImpl:38 - No results for path: $['local_names']['en']City: Париж
+2023-02-15 17:22:10 DEBUG CityServiceImpl:38 - No results for path: $['local_names']['en']City: Париж

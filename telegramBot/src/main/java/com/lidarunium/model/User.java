@@ -8,8 +8,7 @@ import org.springframework.format.annotation.DateTimeFormat;
 
 import java.sql.Date;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Data
 @FieldDefaults(level = AccessLevel.PRIVATE)
