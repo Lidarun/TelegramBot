@@ -65,3 +65,6 @@
 2023-02-15 17:19:30 DEBUG CityServiceImpl:37 - No results for path: $['local_names']['en']City: Париж
 2023-02-15 17:21:20 DEBUG CityServiceImpl:38 - No results for path: $['local_names']['en']City: Париж
 2023-02-15 17:22:10 DEBUG CityServiceImpl:38 - No results for path: $['local_names']['en']City: Париж
+2023-02-16 11:14:14 ERROR TelegramBot:76 - Text parameter can't be empty
+2023-02-16 11:15:35 ERROR TelegramBot:76 - Text parameter can't be empty
+2023-02-16 11:16:24 ERROR TelegramBot:76 - Text parameter can't be empty

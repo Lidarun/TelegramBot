@@ -19,6 +19,11 @@ public class User {
     String fName;
     String lName;
     String uName;
+
+    @OneToOne
+    @JoinColumn(name = "city_id")
+    City city;
+
     @DateTimeFormat(pattern = "dd/MM/yyyy")
     Date registerDate;
     boolean active;

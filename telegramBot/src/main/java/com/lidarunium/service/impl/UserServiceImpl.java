@@ -10,6 +10,7 @@ import java.sql.Date;
 import java.sql.Timestamp;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.util.Optional;
 
 @Service
 public class UserServiceImpl implements UserService {
@@ -31,5 +32,13 @@ public class UserServiceImpl implements UserService {
         user.setActive(false);
 
         repository.save(user);
+    }
+
+    @Override
+    public String getCityFromUserData(long chatId) {
+        User user = Optional.ofNullable(repository.getUserByChatId(chatId)).orElse(null);
+        if(user == null) return null;
+
+        return user.getCity().toString();
     }
 }
